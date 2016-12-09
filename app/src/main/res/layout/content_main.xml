@@ -13,8 +13,19 @@
     tools:context="com.pachouri.scaleanimation.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageViewTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewBottom"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/ic_launcher"
+        />
 </RelativeLayout>
