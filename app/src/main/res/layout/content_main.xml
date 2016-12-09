@@ -18,6 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:src="@mipmap/ic_launcher"
         />
 
@@ -27,5 +28,15 @@
         android:layout_height="180dp"
         android:layout_alignParentBottom="true"
         android:src="@mipmap/ic_launcher"
+        />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Reset"
+        android:textSize="16sp"
+        android:textStyle="bold"
         />
 </RelativeLayout>

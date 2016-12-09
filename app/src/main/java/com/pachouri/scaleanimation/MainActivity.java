@@ -6,12 +6,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.ScaleAnimation;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
     private ImageView imageViewBottom;
     private ImageView imageViewTop;
+    private Button buttonReset;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +27,20 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         imageViewBottom = (ImageView) findViewById(R.id.imageViewBottom);
         imageViewTop = (ImageView) findViewById(R.id.imageViewTop);
+        buttonReset = (Button) findViewById(R.id.buttonReset);
 
         imageViewBottom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Call method for scale animation
                 scaleDownAndTransitionAnimation(imageViewBottom, imageViewTop);
+            }
+        });
+
+        buttonReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imageViewBottom.setVisibility(View.VISIBLE);
             }
         });
     }
